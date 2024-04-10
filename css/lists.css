@@ -1,0 +1,62 @@
+@counter-style emojies {
+    system: cyclic;
+    symbols: 🖤 💜 🤍;
+    suffix: " ";
+}
+
+@counter-style flowers {
+    system: cyclic;
+    symbols: 🌷 🌹 🌼 🪷 🌻;
+    suffix: " ";
+}
+
+body {
+    background: linear-gradient(#9370DB, #C71585) fixed;
+    margin: 36px;
+}
+
+p {
+    background-image: url(https://i.pinimg.com/originals/db/4b/1c/db4b1cf544b397c9ca8787477278b6c1.gif);
+    background-size: cover;
+    color: #663399;
+    font-size: 1.5cm;
+    text-align: center;
+}
+
+ul,
+ol,
+dl {
+    font-size: 26px;
+    color: #4B0082;
+}
+
+ul.u1 li::marker {
+    color: #8B0000;
+    font-size: 1.2em;
+}
+
+.special-mark li {
+    padding-left: 7px;
+}
+
+.special-mark li::marker {
+    color: #DB7093;
+}
+
+
+ul.u3 {
+    list-style: emojies;
+}
+
+ol.o1 {
+    list-style: flowers;
+}
+
+.dl1 {
+    border: double 10px blueviolet;
+    padding: 10px;
+}
+
+.dl1 dd {
+    color: black;
+}
